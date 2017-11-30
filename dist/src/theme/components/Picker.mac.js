@@ -1,2 +1,0 @@
-Object.defineProperty(exports,"__esModule",{value:true});var _Picker=require('./Picker.ios');Object.keys(_Picker).forEach(function(key){if(key==="default"||key==="__esModule")return;Object.defineProperty(exports,key,{enumerable:true,get:function get(){return _Picker[key];}});});
-//# sourceMappingURL=Picker.mac.js.map

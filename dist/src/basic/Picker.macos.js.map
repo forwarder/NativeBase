@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../../src/basic/Picker.macos.js"],"names":[],"mappings":"6FAAA","file":"Picker.macos.js","sourcesContent":["export * from './Picker.ios'"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"Picker.macos.js","sourcesContent":[]}
