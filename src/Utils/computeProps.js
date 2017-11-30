@@ -1,6 +1,7 @@
 "use_strict";
 import _ from "lodash";
-import ReactNativePropRegistry from "react-native/Libraries/Renderer/shims/ReactNativePropRegistry";
+// import ReactNativePropRegistry from "react-native/Libraries/Renderer/shims/ReactNativePropRegistry";
+import ReactNativePropRegistry from "react-native/Libraries/Renderer/src/renderers/native/ReactNativePropRegistry";
 // For compatibility with RN 0.25
 // import ReactNativePropRegistry from "react-native/Libraries/ReactNative/ReactNativePropRegistry";
 module.exports = function(incomingProps, defaultProps) {
