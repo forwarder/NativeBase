@@ -14,7 +14,7 @@ ListItem=function(_Component){_inherits(ListItem,_Component);function ListItem()
 var variables=this.context.theme?this.context.theme["@@shoutem.theme/themeStyle"].variables:_platform2.default;
 
 if(
-_reactNative.Platform.OS==="ios"||
+_reactNative.Platform.OS!=="android"||
 variables.androidRipple===false||
 !this.props.onPress&&!this.props.onLongPress||
 _reactNative.Platform.Version<=21)
