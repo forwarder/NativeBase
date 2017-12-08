@@ -14,7 +14,7 @@ class ListItem extends Component {
 		const variables = this.context.theme ? this.context.theme["@@shoutem.theme/themeStyle"].variables : variable;
 
 		if (
-			Platform.OS === "ios" ||
+			Platform.OS !== "android" ||
 			variables.androidRipple === false ||
 			(!this.props.onPress && !this.props.onLongPress) ||
 			Platform.Version <= 21
