@@ -41,7 +41,7 @@
     "print-message": "^2.1.0",
     "prop-types": "^15.5.10",
     "react-native-drawer": "https://github.com/GeekyAnts/react-native-drawer",
-    "react-native-easy-grid": "0.1.15",
+    "react-native-easy-grid": "0.1.13",
     "react-native-keyboard-aware-scroll-view": "https://github.com/GeekyAnts/react-native-keyboard-aware-scroll-view",
     "react-native-vector-icons": "~4.4.2",
     "react-tween-state": "^0.1.5",
