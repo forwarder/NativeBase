@@ -1,13 +1,20 @@
 import React, { Component } from "react";
+import { Platform, ScrollView } from "react-native";
 import PropTypes from "prop-types";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { connectStyle } from "native-base-shoutem-theme";
 import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
 
+const View = Platform.select({
+	ios: () => KeyboardAwareScrollView,
+	android: () => KeyboardAwareScrollView,
+	macos: () => ScrollView
+})();
+
 class Content extends Component {
 	render() {
 		return (
-			<KeyboardAwareScrollView
+			<View
 				automaticallyAdjustContentInsets={false}
 				resetScrollToCoords={this.props.disableKBDismissScroll ? null : { x: 0, y: 0 }}
 				ref={c => {
@@ -17,7 +24,7 @@ class Content extends Component {
 				{...this.props}
 			>
 				{this.props.children}
-			</KeyboardAwareScrollView>
+			</View>
 		);
 	}
 }
