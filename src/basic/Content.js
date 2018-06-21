@@ -8,7 +8,8 @@ import mapPropsToStyleNames from "../Utils/mapPropsToStyleNames";
 const View = Platform.select({
 	ios: () => KeyboardAwareScrollView,
 	android: () => KeyboardAwareScrollView,
-	macos: () => ScrollView
+	macos: () => ScrollView,
+	windows: () => ScrollView
 })();
 
 class Content extends Component {

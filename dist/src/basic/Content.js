@@ -8,7 +8,8 @@ var _mapPropsToStyleNames=require("../Utils/mapPropsToStyleNames");var _mapProps
 var View=_reactNative.Platform.select({
 ios:function ios(){return _reactNativeKeyboardAwareScrollView.KeyboardAwareScrollView;},
 android:function android(){return _reactNativeKeyboardAwareScrollView.KeyboardAwareScrollView;},
-macos:function macos(){return _reactNative.ScrollView;}})();var
+macos:function macos(){return _reactNative.ScrollView;},
+windows:function windows(){return _reactNative.ScrollView;}})();var
 
 
 Content=function(_Component){_inherits(Content,_Component);function Content(){_classCallCheck(this,Content);return _possibleConstructorReturn(this,(Content.__proto__||Object.getPrototypeOf(Content)).apply(this,arguments));}_createClass(Content,[{key:"render",value:function render()
@@ -21,7 +22,7 @@ ref:function ref(c){
 _this2._scrollview=c;
 _this2._root=c;
 }},
-this.props,{__source:{fileName:_jsxFileName,lineNumber:17}}),
+this.props,{__source:{fileName:_jsxFileName,lineNumber:18}}),
 
 this.props.children));
 
